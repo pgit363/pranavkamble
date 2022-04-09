@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Laravel Deployement</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-0 col-sm-0">
+            <!-- <div class="left_sidebar position-fixed">
+                    <a href="" class="close-btn btn btn-primary" id="close"><i
+                            class="fas fa-times"></i></a>
+                    <ul class="p-5">
+                        <li><a href="index.html" class="nav-link active">Posts</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+
+                    <div class="web_name">
+                        <h2 class="text-center">Blog Website</h2>
+                    </div>
+                    <div class="subcribe p-5">
+                        <div class="form-inline">
+                            <label for="">Subscribe for newslatter</label> <br>
+                            <input type="text" class="form-control"
+                                placeholder="Subscribe">
+                        </div>
+                    </div>
+                    <div class="footer p-3">
+                        <h4 class="text-capitalize">
+                            @copywrite powered by hilal ahmad
+                        </h4>
+                    </div>
+                </div> -->
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-md-12 col-sm-12">
+                        <div class="main_content">
+                            <div class="custom_navbar">
+                                <a href="" class="burger-btn" id="open"><button class="btn btn-primary"><i
+                                            class="fas fa-bars"></i></button></a>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                        d-flex
+                                        justify-content-center
+                                        align-items-center mt-3">
+                                    <div class="blog_image_single">
+                                        <img src="images/laravelnewbanner.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                        mt-5">
+                                    <h3 class="px-4">
+                                        <strong>Deploy Your Laravel 8 Application With GitHub & Cpanel</strong>
+                                    </h3>
+                                    <br>
+                                    <p class="px-4">
+                                        Laravel is an open source PHP platform created by Taylor Otwell that's designed
+                                        to make web apps easier and faster. It follows a pattern of Model View
+                                        Controller (MVC) configuration. Laravel reuses the current components of various
+                                        frameworks that help to build a web application.
+                                        The major part is to deploy Laravel application there are so manny options but i
+                                        choose Cpanel hosting because Capnel hosting is lower in cost and affordable for
+                                        small
+                                        scale business.
+                                        <br>
+                                        In this blog, I'm trying to explain how we can deploy our production ready
+                                        laravel 8 application on Cpanel shared hosting with GitHub.
+                                    </p>
+                                    <br>
+                                    <h3 class="px-4">
+                                        <strong>Prerequisite</strong>
+                                    </h3>
+                                    <br>
+                                    <ul class="px-4">
+                                        <li>PHP Version 7.3 or above </li>
+                                        <li>Composer</li>
+                                        <li>VScode</li>
+                                        <li>XAMPP server</li>
+                                        <li>GitHub Account</li>
+                                        <li>Cpanel</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                        d-flex
+                                        justify-content-center
+                                        align-items-center mt-3">
+                                    <h3 class="px-4">
+                                        <strong>Phase 1:</strong>
+                                    </h3>
+                                    <h4>
+                                        Creating Laravel 8 application
+                                    </h4>
+                                </div>
+                                <br>
+                                <strong>
+                                    <h3> Step 1: Create laravel Project</h3>
+                                </strong>
+                                <div class="blog_image_single">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                                <div class="blog_image_single">
+                                    <img src="images/2.png" alt="">
+                                </div>
+                                <br>
+                                Now We have Successfully created laravel Application.
+                                <br>
+                                <br>
+
+                                <strong>
+                                    <h3> Step 2: Local Configuration of laravel Project</h3>
+                                </strong>
+                                <br>
+                                Here, we have to fill Database credentials, 3rd party API keys, Mail credentials etc.
+                                <br>
+                                <br>
+
+                                <div class="blog_image_single">
+                                    <img src="images/3.png" alt="">
+                                </div>
+                                <br>
+                                Use following artisan commands
+                                <br>
+                                <br>
+                                php artisan migrate
+                                <br>
+                                php artisan key:generate
+                                <br>
+                                php artisan storage:link
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/4.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/5.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/6.png" alt="">
+                                </div>
+                                <br>
+                                We have Done it.....!
+                                <br>
+
+                                <br>
+                                Now We need to test our laravel application on localhost.
+                                <br>
+                                <br>
+                                Now use php artisan serve
+                                <br>
+
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/7.png" alt="">
+                                </div>
+                                <br>
+                                Now hit localhost url into browser given in terminal.
+                                <br>
+                                <br>
+                                Output
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/8.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Here We completed our Phase 1.
+                                <br>
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                d-flex
+                                justify-content-center
+                                align-items-center mt-3">
+                                    <h3 class="px-4">
+                                        <strong>Phase 2:</strong>
+                                    </h3>
+                                    <br>
+                                    <h4>
+                                        Configuring GitHub.
+                                    </h4>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <strong>
+                                    <h4> Step 1: Creating Public GIT Repository</h4>
+                                </strong>
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/9.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                <strong>
+                                    <h4> Step 2: Copy GIT Repository clone link & GIT init</h4>
+                                </strong>
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/10.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Now, to initialize git in Project.
+                                <br>
+                                <br>
+                                Goto root Directory of project & use following git commands.
+                                <br>
+                                <br>
+                                1. git init
+                                <br>
+                                <br>
+                                2. git remode add "repository url"
+                                <br>
+                                <br>
+                                3. git status (check your branch)
+                                <br>
+                                <br>
+                                Finally push code to git repository
+                                <br>
+                                <br>
+                                4. git add .
+                                <br>
+                                <br>
+                                3. git commit -m "message"
+                                <br>
+                                <br>
+                                3. git push origin master
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/11.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/12.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/13.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/14.png" alt="">
+                                </div>
+                                <br>
+                                So now you can see your changes of git repository
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/15.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                        mt-5"></div>
+                                <p class="px-4">
+
+                                </p>
+                                <p class="d-flex
+                                            justify-content-around">
+                                    <span><i class="fas
+                                                    fa-calendar-alt mr-2"></i>
+                                        20
+                                        June
+                                        2021 </span>
+                                    <span> <i class="fa fa-folder mr-2" aria-hidden="true"></i>
+                                        Javascript</span>
+                                    <span> <i class="fa fa-comments
+                                                    mr-2" aria-hidden="true"></i> 27</span>
+                                </p>
+                            </div>
+                            <div class="col-xl-12 col-md-12 col-sm-12">
+                                <form action="" id="replay-form">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-md-6
+                                                    col-sm-12">
+                                            <div class="form-group">
+                                                <label for="">Enter your
+                                                    Name</label>
+                                                <input type="text" class="form-control" name="name" id="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6
+                                                    col-sm-12">
+                                            <div class="form-group">
+                                                <label for="">Enter your
+                                                    Email</label>
+                                                <input type="text" class="form-control" name="email" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6
+                                                    col-sm-12">
+                                            <div class="form-group">
+                                                <label for="">Enter your
+                                                    Website (optional)</label>
+                                                <input type="text" class="form-control" name="website" id="website">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12
+                                                    col-sm-12">
+                                            <div class="form-group">
+                                                <label for="comment">Enter
+                                                    your
+                                                    Comment</label>
+                                                <textarea class="form-control" name="comment" id="comment"
+                                                    rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn
+                                                btn-primary">Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- show comments -->
+                    <!-- <div class="comments my-5">
+                        <h4>Comments (4)</h4>
+
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 col-sm-12
+                                        mt-3">
+
+                                <div class="card p-4">
+                                    <h4>Hilal ahmad</h4>
+                                    <p>
+                                        this is your comments
+                                    </p>
+                                    <hr>
+                                    <div class="replay-comments ml-5">
+                                        <div class="row">
+                                            <div class="col-xl-12
+                                                        col-md-12
+                                                        col-sm-12">
+                                                <h4>Hilal ahmad</h4>
+                                                <p>
+                                                    this is your replay
+                                                    comments
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-xl-12
+                                                        col-md-12
+                                                        col-sm-12">
+                                                <h4>Hilal ahmad</h4>
+                                                <p>
+                                                    this is your replay
+                                                    comments
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-xl-12
+                                                        col-md-12
+                                                        col-sm-12">
+                                                <h4>Hilal ahmad</h4>
+                                                <p>
+                                                    this is your replay
+                                                    comments
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-xl-12
+                                                        col-md-12
+                                                        col-sm-12">
+                                                <h4>Hilal ahmad</h4>
+                                                <p>
+                                                    this is your replay
+                                                    comments
+                                                </p>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- <button type="button" class="btn
+                                            btn-primary float-right" id="fouces">replay</button> -->
+
+                            </div>
+                            <!-- 
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                        mt-3">
+
+                                    <div class="card p-4">
+                                        <h4>Hilal ahmad</h4>
+                                        <p>
+                                            this is your comments
+                                        </p>
+                                        <hr>
+                                        <div class="replay-comments ml-5">
+                                            <div class="row">
+                                                <div class="col-xl-12
+                                                        col-md-12
+                                                        col-sm-12">
+                                                    <h4>Hilal ahmad</h4>
+                                                    <p>
+                                                        this is your replay
+                                                        comments
+                                                    </p>
+                                                    <hr>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <button type="button" class="btn
+                                            btn-primary float-right" id="fouces">replay</button>
+
+                                </div> -->
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/action.js"></script>
+</body>
+
+</html>
