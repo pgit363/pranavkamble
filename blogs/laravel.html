@@ -50,10 +50,10 @@
                 <div class="row">
                     <div class="col-xl-9 col-md-12 col-sm-12">
                         <div class="main_content">
-                            <div class="custom_navbar">
+                            <!-- <div class="custom_navbar">
                                 <a href="" class="burger-btn" id="open"><button class="btn btn-primary"><i
                                             class="fas fa-bars"></i></button></a>
-                            </div>
+                            </div> -->
                             <div class="row mt-3">
                                 <div class="col-xl-12 col-md-12 col-sm-12
                                         d-flex
@@ -74,7 +74,7 @@
                                         to make web apps easier and faster. It follows a pattern of Model View
                                         Controller (MVC) configuration. Laravel reuses the current components of various
                                         frameworks that help to build a web application.
-                                        The major part is to deploy Laravel application there are so manny options but i
+                                        The major part is to deploy Laravel application there are so many options but i
                                         choose Cpanel hosting because Capnel hosting is lower in cost and affordable for
                                         small
                                         scale business.
@@ -82,446 +82,426 @@
                                         In this blog, I'm trying to explain how we can deploy our production ready
                                         laravel 8 application on Cpanel shared hosting with GitHub.
                                     </p>
-                                    <br>
                                     <h3 class="px-4">
                                         <strong>Prerequisite</strong>
                                     </h3>
-                                    <br>
-                                    <ul class="px-4">
-                                        <li>PHP Version 7.3 or above </li>
-                                        <li>Composer</li>
-                                        <li>VScode</li>
-                                        <li>XAMPP server</li>
-                                        <li>GitHub Account</li>
-                                        <li>Cpanel</li>
-                                    </ul>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>PHP Version 7.3 or above </li>
+                                            <li>Composer</li>
+                                            <li>VScode</li>
+                                            <li>XAMPP server</li>
+                                            <li>GitHub Account</li>
+                                            <li>Cpanel</li>
+                                        </ul>
+                                    </div>
                                 </div>
+
                                 <div class="col-xl-12 col-md-12 col-sm-12
-                                        d-flex
-                                        justify-content-center
-                                        align-items-center mt-3">
-                                    <h3 class="px-4">
+                                        mt-5">
+                                    <h1 class="px-4" style="text-align: center;">
                                         <strong>Phase 1:</strong>
-                                    </h3>
-                                    <h4>
+                                    </h1>
+                                    <h4 class="px-4" style="text-align: center; font-size: 20px;">
                                         Creating Laravel 8 application
                                     </h4>
-                                </div>
-                                <br>
-                                <strong>
-                                    <h3> Step 1: Create laravel Project</h3>
-                                </strong>
-                                <div class="blog_image_single">
-                                    <img src="images/1.png" alt="">
-                                </div>
-                                <div class="blog_image_single">
-                                    <img src="images/2.png" alt="">
-                                </div>
-                                <br>
-                                Now We have Successfully created laravel Application.
-                                <br>
-                                <br>
-
-                                <strong>
-                                    <h3> Step 2: Local Configuration of laravel Project</h3>
-                                </strong>
-                                <br>
-                                Here, we have to fill Database credentials, 3rd party API keys, Mail credentials etc.
-                                <br>
-                                <br>
-
-                                <div class="blog_image_single">
-                                    <img src="images/3.png" alt="">
-                                </div>
-                                <br>
-                                Use following artisan commands
-                                <br>
-                                <br>
-                                php artisan migrate
-                                <br>
-                                php artisan key:generate
-                                <br>
-                                php artisan storage:link
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/4.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/5.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/6.png" alt="">
-                                </div>
-                                <br>
-                                We have Done it.....!
-                                <br>
-
-                                <br>
-                                Now We need to test our laravel application on localhost.
-                                <br>
-                                <br>
-                                Now use php artisan serve
-                                <br>
-
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/7.png" alt="">
-                                </div>
-                                <br>
-                                Now hit localhost url into browser given in terminal.
-                                <br>
-                                <br>
-                                Output
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/8.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Here We completed our Phase 1.
-                                <br>
-                                <div class="col-xl-12 col-md-12 col-sm-12
-                                d-flex
-                                justify-content-center
-                                align-items-center mt-3">
-                                    <h3 class="px-4">
-                                        <strong>Phase 2:</strong>
-                                    </h3>
                                     <br>
-                                    <h4>
+
+                                    <h6 class="px-4">
+                                        Step 1: Create laravel Project
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/1.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/2.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Now We have Successfully created laravel Application.
+                                    </h6>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Step 2: Local Configuration of laravel Project
+                                        <br>
+                                        <br>
+                                        Here, we have to fill Database credentials, 3rd party API keys, Mail credentials
+                                        etc.
+                                        <br>
+                                    </h6>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/3.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Use following artisan commands
+                                    </h6>
+                                    <h6 class="px-4">
+                                        php artisan migrate
+                                    </h6>
+                                    <h6 class="px-4">
+                                        php artisan key:generate
+                                    </h6>
+
+                                    <h6 class="px-4">
+                                        php artisan storage:link
+                                    </h6>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/4.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/5.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/6.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        We have Done it.....!
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Now We need to test our laravel application on localhost.
+
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Now use php artisan serve
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/7.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Now hit localhost url into browser given in terminal.
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Output
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/8.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Here We completed our Phase 1.
+                                    </h6>
+                                </div>
+
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                mt-5">
+                                    <h1 class="px-4" style="text-align: center;">
+                                        <strong>Phase 2:</strong>
+                                    </h1>
+                                    <h4 class="px-4" style="text-align: center; font-size: 20px;">
                                         Configuring GitHub.
                                     </h4>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-                                <strong>
-                                    <h4> Step 1: Creating Public GIT Repository</h4>
-                                </strong>
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/9.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                <strong>
-                                    <h4> Step 2: Copy GIT Repository clone link & GIT init</h4>
-                                </strong>
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/10.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Now, to initialize git in Project.
-                                <br>
-                                <br>
-                                Goto root Directory of project & use following git commands.
-                                <br>
-                                <br>
-                                1. git init
-                                <br>
-                                <br>
-                                2. git remode add "repository url"
-                                <br>
-                                <br>
-                                3. git status (check your branch)
-                                <br>
-                                <br>
-                                Finally push code to git repository
-                                <br>
-                                <br>
-                                4. git add .
-                                <br>
-                                <br>
-                                3. git commit -m "message"
-                                <br>
-                                <br>
-                                3. git push origin master
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/11.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/12.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/13.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/14.png" alt="">
-                                </div>
-                                <br>
-                                So now you can see your changes of git repository
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/15.png" alt="">
-                                </div>
-                                <br>
-                                <br>
+                                    <br>
 
+                                    <h6 class="px-4">
+                                        Step 1: Creating Public GIT Repository
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/9.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Step 2: Copy GIT Repository clone link & GIT init
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/10.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Now, to initialize git in Project.
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Goto root Directory of project & use following git commands.
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>git init</li>
+                                            <li>git remode add "repository url"</li>
+                                            <li>git status (check your branch)</li>
+                                        </ul>
+                                    </div>
+                                    <h6 class="px-4">
+                                        Finally push code to git repository
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>git add .</li>
+                                            <li>git commit -m "message"</li>
+                                            <li> git push origin "branch name"</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/11.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/12.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/13.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/14.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        So now you can see your changes of git repository
+                                    </h6>
+                                </div>
 
                                 <div class="col-xl-12 col-md-12 col-sm-12
-                                d-flex
-                                justify-content-center
-                                align-items-center mt-3">
-                                    <h3 class="px-4">
+                                mt-5">
+                                    <h1 class="px-4" style="text-align: center;">
                                         <strong>Phase 3:</strong>
-                                    </h3>
-                                    <br>
-                                    <h4>
+                                    </h1>
+                                    <h4 class="px-4" style="text-align: center; font-size: 20px;">
                                         Configuring domain.
                                     </h4>
+                                    <br>
+
+                                    <h6 class="px-4">
+                                        Step 1: Login to Cpanel
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/16.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Step 2: create domain/subdomain to deploy laravel project
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/17.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Choose domain or subdomain option as per your requirement, here in my case I'm
+                                        choosing
+                                        subdomain.
+                                    </h6>
+
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>Enter your subdomain name</li>
+                                            <li>Domain name</li>
+                                            <li>Select subdomain root Directory</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/18.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>4. hit create button</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/19.png" alt="">
+                                    </div>
+                                    <h6 class="px-4">
+                                        Now Goto the file manager & find the domain / subdomain folder is created or
+                                        not.
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/20.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Now we Successfully created subdomain.
+                                    </h6>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Step 3: Project integration with GitHub repository
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Select Git version control option
+                                    </h6>
+
+
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/21.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Here we get list of all git connected projects
+                                    </h6>
+                                    <h6 class="px-4">
+                                        let's integrate our project with git repository.
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/22.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Click on create button
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>1. Copy your git repository clone link & paste it into clone url field.
+                                            </li>
+                                            <li>2. Select your project Directory</li>
+                                            <li>3. Give your repository name</li>
+                                            <li>4. Press create button</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/23.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Go to Cpanel and again choose Git version control you can see our subdomain
+                                        directory is
+                                        connected with Git repository
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/26.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Now Goto Cpanel terminal
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>1. Navigate to root Directory of domain or subdomain</li>
+                                            <li>2. remove all files & folder from root directory using rm -rf command
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/24.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/25.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Now Goto Git version control.
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>1. Find your repository name and verify the root directory.</li>
+                                            <li>2. Goto Manage.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/27.png" alt="">
+                                    </div>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>3. Update your branch to be fetch from git</li>
+                                            <li>2. Goto Manage.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/28.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>4. Goto Pull or Deploy Tab.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/29.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Here you can see all details of your git repository.
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Choose Update from remote branch.
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Now Goto File manager find your domain / subdomain root directory. Verify that
+                                        your
+                                        repository is cloned.
+                                    </h6>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/30.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Here we completed our step 3....!
+                                    </h6>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Step 4: Project Configuration & Deployement on Cpanel
+                                    </h6>
+                                    <br>
+                                    <h6 class="px-4">
+                                        From end of previous step from root directory
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>1. Create .htaccess file in root directory.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/31.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>2. Add redirection code in htaccess to redirect to laravel Public
+                                                folder.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/32.png" alt="">
+                                    </div>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li> 3. Save changes.</li>
+                                        </ul>
+                                    </div>
+                                    <h6 class="px-4">
+                                        Now Goto Cpanel terminal.
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Navigate to domain / subdomain root directory
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Use following commands
+                                    </h6>
+                                    <div class="px-4">
+                                        <ul class="px-4">
+                                            <li>1. composer install --ignore-platform-reqs</li>
+                                            <li>2. php artisan key:generate</li>
+                                            <li> 3.chmod -R 775 storage</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/33.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/34.png" alt="">
+                                    </div>
+                                    <br>
+                                    <h6 class="px-4">
+                                        Finally efforts are over. It's time to see results....!
+                                    </h6>
+                                    <h6 class="px-4">
+                                        Goto Your browser & hit your domain / subdomain URL.
+                                    </h6>
+                                    <br>
+                                    <div class="px-4 blog_image_single">
+                                        <img src="images/35.png" alt="">
+                                    </div>
+                                    <h6 class="px-4">
+                                        Hurray we did It...!
+                                    </h6>
                                 </div>
-                                <br>
-                                <br>
-                                <br>
-                                <strong>
-                                    <h4> Step 1: Login to Cpanel</h4>
-                                </strong>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/16.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-
-                                <strong>
-                                    <h4> Step 2: create domain/subdomain to deploy laravel project</h4>
-                                </strong>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/17.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Choose domain or subdomain option as per your requirement, here in my case I'm choosing
-                                subdomain.
-                                <br>
-                                <br>
-                                1. Enter your subdomain name
-                                <br>
-                                2. Domain name
-                                <br>
-                                3. Select subdomain root Directory
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/18.png" alt="">
-                                </div>
-
-                                <br>
-                                4. hit create button
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/19.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Now Goto the file manager & find the domain / subdomain folder is created or not.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/20.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Now we Successfully created subdomain.
-                                <br>
-                                <br>
-                                <strong>
-                                    <h4> Step 3: Project integration with GitHub repository</h4>
-                                </strong>
-                                <br>
-                                Select Git version control option
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/21.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Here we get list of all git connected projects
-                                <br>
-                                <br>
-                                let's integrate our project with git repository.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/22.png" alt="">
-                                </div>
-                                <br>
-                                Click on create button
-                                <br>
-                                <br>
-                                1. Copy your git repository clone link & paste it into clone url field.
-                                <br>
-                                2. Select your project Directory
-                                <br>
-                                3. Give your repository name
-                                <br>
-                                4. Press create button
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/23.png" alt="">
-                                </div>
-                                <br>
-                                Go to Cpanel and again choose Git version control you can see our subdomain directory is connected with Git repository
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/26.png" alt="">
-                                </div>                        
-                                <br>
-                                Now Goto Cpanel terminal
-                                <br>
-                                1. Navigate to root Directory of domain or subdomain
-                                <br>
-                                2. remove all files & folder from root directory using rm -rf command
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/24.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/25.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Now Goto Git version control.
-                                <br><br>
-                                1. Find your repository name and verify the root directory.
-                                <br>
-                                2. Goto Manage.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/27.png" alt="">
-                                </div>
-                                <br>
-                                3. Update your branch to be fetch from git
-                               <br>
-                               <br>
-                                <div class="blog_image_single">
-                                    <img src="images/28.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                4. Goto Pull or Deploy Tab.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/29.png" alt="">
-                                </div>
-                                <br>
-                                Here you can see all details of your git repository.
-                                <br>
-                                <br>
-                                Choose Update from remote branch.
-                                <br><br>
-                                Now Goto File manager find your domain / subdomain root directory. Verify that your repository is cloned.
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/30.png" alt="">
-                                </div>
-                                <br>
-                                Here we completed our step 3....!
-                                <br>
-                                <br>
-                                <strong>
-                                    <h4> Step 4: Project Configuration & Deployement on Cpanel</h4>
-                                </strong>
-                                <br>
-                                From end of previous step from root directory
-                                <br><br>
-                                1. Create .htaccess file in root directory.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/31.png" alt="">
-                                </div>
-                                <br>
-                                2. Add redirection code in htaccess to redirect to laravel Public folder.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/32.png" alt="">
-                                </div>
-                                <br>
-                                3. Save changes.
-                                <br>
-                                <br>
-                                Now Goto Cpanel terminal.
-                                <br>
-                                <br>
-                                Navigate to domain / subdomain root directory
-                                <br>
-                                Use following commands 
-                                <br>
-                                <br>
-                                1. composer install --ignore-platform-reqs
-                                <br>
-                                2. php artisan key:generate
-                                <br>
-                                3.chmod -R 775 storage
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/33.png" alt="">
-                                </div>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/34.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Finally efforts are over. It's time to see results....!
-                                <br>
-                                <br>
-                                Goto Your browser & hit your domain / subdomain URL.
-                                <br>
-                                <br>
-                                <div class="blog_image_single">
-                                    <img src="images/35.png" alt="">
-                                </div>
-                                <br>
-                                <br>
-                                Hurray we did It...!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 <div class="col-xl-12 col-md-12 col-sm-12
                                         mt-5"></div>
                                 <p class="px-4">
@@ -582,8 +562,7 @@
                                         </div>
                                     </div>
 
-                                    <button type="button" class="btn
-                                                btn-primary">Comment</button>
+                                    <button type="button" class="btn btn-primary" onclick="alert('comming soon...')">Comment</button>
                                 </form>
                             </div>
                         </div>
