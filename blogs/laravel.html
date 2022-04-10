@@ -271,27 +271,235 @@
                                 <br>
 
 
+                                <div class="col-xl-12 col-md-12 col-sm-12
+                                d-flex
+                                justify-content-center
+                                align-items-center mt-3">
+                                    <h3 class="px-4">
+                                        <strong>Phase 3:</strong>
+                                    </h3>
+                                    <br>
+                                    <h4>
+                                        Configuring domain.
+                                    </h4>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <strong>
+                                    <h4> Step 1: Login to Cpanel</h4>
+                                </strong>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/16.png" alt="">
+                                </div>
+                                <br>
+                                <br>
 
+                                <strong>
+                                    <h4> Step 2: create domain/subdomain to deploy laravel project</h4>
+                                </strong>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/17.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Choose domain or subdomain option as per your requirement, here in my case I'm choosing
+                                subdomain.
+                                <br>
+                                <br>
+                                1. Enter your subdomain name
+                                <br>
+                                2. Domain name
+                                <br>
+                                3. Select subdomain root Directory
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/18.png" alt="">
+                                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                <br>
+                                4. hit create button
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/19.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Now Goto the file manager & find the domain / subdomain folder is created or not.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/20.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Now we Successfully created subdomain.
+                                <br>
+                                <br>
+                                <strong>
+                                    <h4> Step 3: Project integration with GitHub repository</h4>
+                                </strong>
+                                <br>
+                                Select Git version control option
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/21.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Here we get list of all git connected projects
+                                <br>
+                                <br>
+                                let's integrate our project with git repository.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/22.png" alt="">
+                                </div>
+                                <br>
+                                Click on create button
+                                <br>
+                                <br>
+                                1. Copy your git repository clone link & paste it into clone url field.
+                                <br>
+                                2. Select your project Directory
+                                <br>
+                                3. Give your repository name
+                                <br>
+                                4. Press create button
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/23.png" alt="">
+                                </div>
+                                <br>
+                                Go to Cpanel and again choose Git version control you can see our subdomain directory is connected with Git repository
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/26.png" alt="">
+                                </div>                        
+                                <br>
+                                Now Goto Cpanel terminal
+                                <br>
+                                1. Navigate to root Directory of domain or subdomain
+                                <br>
+                                2. remove all files & folder from root directory using rm -rf command
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/24.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/25.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Now Goto Git version control.
+                                <br><br>
+                                1. Find your repository name and verify the root directory.
+                                <br>
+                                2. Goto Manage.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/27.png" alt="">
+                                </div>
+                                <br>
+                                3. Update your branch to be fetch from git
+                               <br>
+                               <br>
+                                <div class="blog_image_single">
+                                    <img src="images/28.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                4. Goto Pull or Deploy Tab.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/29.png" alt="">
+                                </div>
+                                <br>
+                                Here you can see all details of your git repository.
+                                <br>
+                                <br>
+                                Choose Update from remote branch.
+                                <br><br>
+                                Now Goto File manager find your domain / subdomain root directory. Verify that your repository is cloned.
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/30.png" alt="">
+                                </div>
+                                <br>
+                                Here we completed our step 3....!
+                                <br>
+                                <br>
+                                <strong>
+                                    <h4> Step 4: Project Configuration & Deployement on Cpanel</h4>
+                                </strong>
+                                <br>
+                                From end of previous step from root directory
+                                <br><br>
+                                1. Create .htaccess file in root directory.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/31.png" alt="">
+                                </div>
+                                <br>
+                                2. Add redirection code in htaccess to redirect to laravel Public folder.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/32.png" alt="">
+                                </div>
+                                <br>
+                                3. Save changes.
+                                <br>
+                                <br>
+                                Now Goto Cpanel terminal.
+                                <br>
+                                <br>
+                                Navigate to domain / subdomain root directory
+                                <br>
+                                Use following commands 
+                                <br>
+                                <br>
+                                1. composer install --ignore-platform-reqs
+                                <br>
+                                2. php artisan key:generate
+                                <br>
+                                3.chmod -R 775 storage
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/33.png" alt="">
+                                </div>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/34.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Finally efforts are over. It's time to see results....!
+                                <br>
+                                <br>
+                                Goto Your browser & hit your domain / subdomain URL.
+                                <br>
+                                <br>
+                                <div class="blog_image_single">
+                                    <img src="images/35.png" alt="">
+                                </div>
+                                <br>
+                                <br>
+                                Hurray we did It...!
 
 
 
@@ -444,8 +652,8 @@
                                 <!-- <button type="button" class="btn
                                             btn-primary float-right" id="fouces">replay</button> -->
 
-                            </div>
-                            <!-- 
+                </div>
+                <!-- 
                                 <div class="col-xl-12 col-md-12 col-sm-12
                                         mt-3">
 
@@ -477,11 +685,11 @@
                                             btn-primary float-right" id="fouces">replay</button>
 
                                 </div> -->
-                        </div>
-                    </div> -->
-                </div>
             </div>
-        </div>
+        </div> -->
+    </div>
+    </div>
+    </div>
     </div>
 
     </div>
