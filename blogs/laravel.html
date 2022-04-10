@@ -271,11 +271,12 @@
                                     <h6 class="px-4">
                                         You can buy Cpanel from below websites
                                     </h6>
-                                    
+
                                     <div class="px-4">
                                         <ul class="px-4">
                                             <li> <a href="www.godaddy.com" target="_blank">www.godaddy.com</a></li>
-                                            <li> <a href="india.resellerclub.com" target="_blank">india.resellerclub.com</a></li>
+                                            <li> <a href="india.resellerclub.com"
+                                                    target="_blank">india.resellerclub.com</a></li>
                                             <li> <a href="hostinger.com" target="_blank">hostinger.com</a></li>
                                         </ul>
                                     </div>
@@ -449,33 +450,75 @@
                                     <h6 class="px-4">
                                         Step 4: Project Configuration & Deployement on Cpanel
                                     </h6>
+
                                     <br>
                                     <h6 class="px-4">
-                                        From end of previous step from root directory
+                                        <strong>
+                                            There are 2 options
+                                        </strong>
                                     </h6>
                                     <div class="px-4">
                                         <ul class="px-4">
-                                            <li>1. Create .htaccess file in root directory.</li>
+                                            <li>Update document root directory to Public directory of laravel.
+                                                (Recomended )</li>
+                                            <li>Add redirection in .htaccess file in root directory. (Not Recomended)
+                                            </li>
                                         </ul>
-                                    </div>
-                                    <div class="px-4 blog_image_single">
-                                        <img src="images/31.png" alt="">
                                     </div>
                                     <br>
+                                    <h6 class="px-4">
+                                        <strong>
+                                            Update domain document root directory
+                                        </strong>
+                                    </h6>
                                     <div class="px-4">
                                         <ul class="px-4">
-                                            <li>2. Add redirection code in htaccess to redirect to laravel Public
-                                                folder.</li>
+                                            <li>Goto Domain section.</li>
+                                            <li>Click on repository path.</li>
+                                            <li>Change the path to Public</li>
                                         </ul>
                                     </div>
                                     <div class="px-4 blog_image_single">
-                                        <img src="images/32.png" alt="">
+                                        <img src="images/36.png" alt="">
                                     </div>
-                                    <div class="px-4">
-                                        <ul class="px-4">
-                                            <li> 3. Save changes.</li>
-                                        </ul>
+                                    <br>
+                                    <h1 class="px-4" style="text-align: center;">
+                                        OR
+                                    </h1>
+                                    <div style="background-color: #ff0000;">
+                                        <h6 class="px-4">
+                                            <strong>
+                                                Add redirection in .htaccess file (Not Recomended)
+                                            </strong> <br><br>
+                                            Adding redirection in .htaccess file in root directory leads to security
+                                            issues.
+                                        </h6>
+                                        <div class="px-4">
+                                            <ul class="px-4">
+                                                <li>1. Create .htaccess file in root directory.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="px-4 blog_image_single">
+                                            <img src="images/31.png" alt="">
+                                        </div>
+                                        <br>
+                                        <div class="px-4">
+                                            <ul class="px-4">
+                                                <li>2. Add redirection code in htaccess to redirect to laravel Public
+                                                    folder.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="px-4 blog_image_single">
+                                            <img src="images/32.png" alt="">
+                                        </div>
+                                        <div class="px-4">
+                                            <ul class="px-4">
+                                                <li> 3. Save changes.</li>
+                                            </ul>
+                                        </div>
+                                        <br>
                                     </div>
+
                                     <h6 class="px-4">
                                         Now Goto Cpanel terminal.
                                     </h6>
@@ -510,29 +553,38 @@
                                     <div class="px-4 blog_image_single">
                                         <img src="images/35.png" alt="">
                                     </div>
+                                    <br>
                                     <h6 class="px-4">
                                         Hurray we did It...!
                                     </h6>
                                 </div>
-                                <div class="col-xl-12 col-md-12 col-sm-12
-                                        mt-5"></div>
+                                <div class="col-xl-12 col-md-12 col-sm-12 mt-5"></div>
                                 <p class="px-4">
 
                                 </p>
-                                <p class="d-flex
-                                            justify-content-around">
-                                    <span><i class="fas
-                                                    fa-calendar-alt mr-2"></i>
-                                        20
-                                        June
-                                        2021 </span>
-                                    <span> <i class="fa fa-folder mr-2" aria-hidden="true"></i>
-                                        Javascript</span>
-                                    <span> <i class="fa fa-comments
-                                                    mr-2" aria-hidden="true"></i> 27</span>
+                                <p class="d-flex justify-content-around">
+                                    <span><i class="fas fa-calendar-alt mr-2"></i>
+                                        10
+                                        April
+                                        2022
+                                    </span>
+                                    &nbsp;
+                                    &nbsp;
+                                    &nbsp;
+
+                                    <!-- <span> <i class="fa fa-folder mr-2" aria-hidden="true"></i>
+                                        Javascript
+                                    </span>
+                                    &nbsp;
+                                    &nbsp;
+                                    &nbsp; -->
+<!-- 
+                                    <span> <i class="fa fa-comments mr-2" aria-hidden="true"></i> 
+                                        27
+                                    </span> -->
                                 </p>
                             </div>
-                            <div class="col-xl-12 col-md-12 col-sm-12">
+                            <div class="col-xl-12 col-md-12 col-sm-12 px-4">
                                 <form action="" id="replay-form">
                                     <div class="row">
                                         <div class="col-xl-4 col-md-6
@@ -574,7 +626,8 @@
                                         </div>
                                     </div>
 
-                                    <button type="button" class="btn btn-primary" onclick="alert('comming soon...')">Comment</button>
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="alert('comming soon...')">Comment</button>
                                 </form>
                             </div>
                         </div>
